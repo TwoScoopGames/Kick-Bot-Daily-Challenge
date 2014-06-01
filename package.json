@@ -1,0 +1,22 @@
+{
+  "name": "Kick-Bot-Replays",
+  "version": "0.0.0",
+  "description": "Replay server for Kick Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TwoScoopGames/Kick-Bot-Daily-Challenge.git"
+  },
+  "author": "Two Scoop Games",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TwoScoopGames/Kick-Bot-Daily-Challenge/issues"
+  },
+  "homepage": "https://github.com/TwoScoopGames/Kick-Bot-Daily-Challenge",
+  "dependencies": {
+    "express": "^4.4.0"
+  }
+}
