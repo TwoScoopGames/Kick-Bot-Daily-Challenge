@@ -6,15 +6,21 @@ var salt = "some string";
 var app = express();
 
 app.get("/daily-challenge", function(request, response){
-	response.send(getDailySeed().toString());
+	var seed = getDailySeed().toString();
+	var challenge = {
+		seed : seed
+	};
+
+	response.send(challenge);
 });
 
 function getDailySeed(){
-	return djb2(salt + getUTCDate());
+	var date = new Date();
+
+	return djb2(getUTCDate(date) + salt);
 }
 
-function getUTCDate(){
-	var date = new Date();
+function getUTCDate(date){
 	var month = (date.getUTCMonth() + 1).toString();
 	if(month.length === 1){
 		month = "0" + month;
