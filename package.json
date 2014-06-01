@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TwoScoopGames/Kick-Bot-Daily-Challenge",
   "dependencies": {
-    "express": "^4.4.0"
+    "express": "^4.4.0",
+    "djb2": "0.0.1"
   }
 }
